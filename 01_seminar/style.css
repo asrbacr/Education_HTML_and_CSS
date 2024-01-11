@@ -1,0 +1,104 @@
+
+
+:root{
+    --name-of-variables : #d73e3e;
+}
+
+h1{
+    background: var(--name-of-variables);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: sans-serif;
+    background-color: var(--name-of-variables);
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.menu:hover {
+    color: red;
+    font-size: 20px;
+}
+
+/* .menu:active {
+    font-size: 1px;
+} */
+
+.title {
+    color: #222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+}
+
+.subtitle {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.input_data {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.input_button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.test_div_1 {
+    margin: 20px;
+}
+
+.test_div_2 {
+    padding: 50px;
+}
+
+.test_div_3 {
+    margin: 50px 100px;
+}
+
+.test_div_4 {
+    padding: 50px 100px;
+}
+
+:root{
+   --name-of-variables : #fff;
+}
+
+h1 {
+  background: var(--name-of-variables);
+}
+
+.card {
+    background-color: #d2f705;
+}

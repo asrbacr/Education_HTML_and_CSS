@@ -3,28 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Оставить заявку</title>
   </head>
   <body>
-    <a href="./index.html">Главная</a>
-    <a href="./info/about.html">Обо мне</a>
-    <a href="./form.html">Оставить заявку</a>
-    <h1>Оставить заявку</h1>
+    <a class="menu" href="./index.html">Главная</a>
+    <a class="menu" href="./info/about.html">Обо мне</a>
+    <a class="menu" href="./form.html">Оставить заявку</a>
+    <h1 class="title">Оставить заявку</h1>
     <form action="#">
-        Введите имя: <input required type="text" name="" placeholder="Введите ваше имя" /><br>
-        Введите email: <input required type="email" name="" placeholder="Введите адрес почты" /><br>
-    <button type="submit">Отправить</button>
-    <button type="reset">Стереть форму</button>
+      Введите имя:
+      <input
+        class="input_data"
+        required
+        type="text"
+        name=""
+        placeholder="Введите ваше имя"
+      /><br />
+      Введите email:
+      <input
+        class="input_data"
+        required
+        type="email"
+        name=""
+        placeholder="Введите адрес почты"
+      /><br />
+      <button class="input_button" type="submit">Отправить</button>
+      <button class="input_button" type="reset">Стереть форму</button>
     </form>
-    <hr>
+    <hr />
 
-    <img src="./img/map_yar.jpg" alt="map Yaroslavl" usemap="#map">
+    <img src="./img/map_yar.jpg" alt="map Yaroslavl" usemap="#map" />
 
     <map name="map">
-      <area shape="circle" coords="123, 43, 60" href="https://yandex.ru/search/?text=%D1%8F%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C&lr=16&src=suggest_B" alt="Ярославль" title="город Ярославль">
-      <area shape="circle" coords="630, 130, 100" href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B3%D0%B0" alt="Волга" title="Волга">
-      <area shape="circle" coords="434, 194, 20" href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%98%D0%BB%D0%B8%D0%B8_%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA%D0%B0_(%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C)" alt="Церковь" title="Церковь Илии Пророка">
-      <area shape="circle" coords="268, 378, 30" href="https://www.yarnews.net/files/1/1000/35852.jpg" alt="Площадь" title="Площадь Богоявления">
+      <area
+        shape="circle"
+        coords="123, 43, 60"
+        href="https://yandex.ru/search/?text=%D1%8F%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C&lr=16&src=suggest_B"
+        alt="Ярославль"
+        title="город Ярославль"
+      />
+      <area
+        shape="circle"
+        coords="630, 130, 100"
+        href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B3%D0%B0"
+        alt="Волга"
+        title="Волга"
+      />
+      <area
+        shape="circle"
+        coords="434, 194, 20"
+        href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%98%D0%BB%D0%B8%D0%B8_%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA%D0%B0_(%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C)"
+        alt="Церковь"
+        title="Церковь Илии Пророка"
+      />
+      <area
+        shape="circle"
+        coords="268, 378, 30"
+        href="https://www.yarnews.net/files/1/1000/35852.jpg"
+        alt="Площадь"
+        title="Площадь Богоявления"
+      />
     </map>
 
     <table border="10">
@@ -42,7 +91,7 @@
         <tr>
           <td>2.1</td>
           <!-- <td>2.2</td> -->
-          <td >2.3</td>
+          <td>2.3</td>
         </tr>
         <tr>
           <td>3.1</td>
@@ -52,6 +101,39 @@
       </tbody>
     </table>
 
+    <div class="test_div_1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis
+      pariatur dolor officia dolore?
+    </div>
+    <div class="test_div_2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+      voluptatibus?
+    </div>
+    <div class="test_div_3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed?
+    </div>
+    <div class="test_div_4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error magnam cum
+      ab ea amet, quia consequatur ducimus quis libero saepe dolorum illo
+      veritatis?
+    </div>
 
+    <ul>
+      <li class="menu">Lorem, ipsum dolor.</li>
+      <li class="menu">Lorem, ipsum dolor.</li>
+      <li class="menu">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <div class="card" style="width: 18rem">
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
   </body>
 </html>
