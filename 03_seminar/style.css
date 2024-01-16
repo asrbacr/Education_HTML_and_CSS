@@ -4,6 +4,11 @@
   font-family: "Inter", sans-serif;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,13 +18,13 @@ a {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .header_name {
-  font-family: Forum;
+  font-family: "Forum";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -28,18 +33,68 @@ a {
 }
 
 .header_links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
+  /* display: flex; */
+  /* gap: 30px; */
+  /* align-items: center; */
   color: #fff;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 50px; /* 250% */
 }
+
 .about_images {
-  display: flex;
-  gap: 25px;
-  width: 450px;
+  /* display: flex; */
+  /* gap: 25px; */
+  /* width: 450px; */
 }
+
+.title_top {
+  color: #fff;
+  text-align: center;
+  font-family: "Forum";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 35px 40px;
+  display: flex;
+  width: 600px;
+  height: 220px;
+  justify-content: center;
+  align-items: center;
+  background: #0c0c0e;
+}
+
+.about_header {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.header_line {
+  width: 50px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #0c0c0e;
+  margin-top: 20px;
+}
+
+.about_top-text {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+
