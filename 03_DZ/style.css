@@ -13,10 +13,26 @@ a {
     text-decoration: none;
 }
 
+.center{
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+body {
+    /* position: relative; */
+    /* background-image: url(image/Travel_Time.jpg); */
+    /* background-repeat: no-repeat; */
+}
+
+.img_fon {
+    background-image: url(image/Travel_Time.jpg);
+    background-repeat: no-repeat;
+}
+
 .header {
-    /* display: flex; */
-    /* gap: 128px; */
-    /* margin-top: 73px; */
+    display: flex;
+    gap: 128px;
+    margin-top: 73px;
 }
 
 .header_link {
@@ -27,21 +43,32 @@ a {
     font-weight: 500;
     line-height: normal;
     padding-top: 73 px;
+    /* position: absolute; */
 }
 
-/* .header_link:hover {
+.header_link:hover {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #000;
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 72px;
+    /* width: 72px; */
     height: 2px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
+}
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .welcome_image {
+    display: inline;
+    position: absolute;
 } */
 
-.welcome_image {
-    display: inline;
-}
 
 .welcome_title {
     color: #FFF;
@@ -61,6 +88,7 @@ a {
     font-style: normal;
     font-weight: 275;
     line-height: normal;
+    width: 749px;
 }
 
 .welcome_button {
