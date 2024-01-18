@@ -117,7 +117,7 @@ a {
   align-items: center;
 }
 
-.about_header {
+.header_section {
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
@@ -129,7 +129,7 @@ a {
   margin: 20px;
 }
 
-.header_line {
+.header_section-line {
   width: 50px;
   height: 1px;
   flex-shrink: 0;
