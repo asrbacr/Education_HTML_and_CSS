@@ -172,7 +172,15 @@ a {
 }
 
 .about_left_header {
+    text-align: left;
     width: 409px;
+    color: #000;
+    font-family: 'Gilroy-Bold';
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 92px;
 }
 
 .about_left_text {
