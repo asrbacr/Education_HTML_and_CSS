@@ -9,45 +9,12 @@
   padding: 0px;
 }
 
-.input[type="radio"] {
-
-}
-
-/* input[type="radio"] {
-    all: unset;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
-    opacity: 1;
-    position: static;
-    visibility: visible;
-    display: inline-block;
-    stroke-width: 2px;
-    stroke: #000;
-    width: 17px;
-    height: 17px;
-    flex-shrink: 0;
-} */
-
-
-body {
-  width: 1440px;
-  margin: auto;
-  padding: auto;
-}
-
 a {
   text-decoration: none;
 }
 
 .title_image_welcome {
   width: 1440px;
-}
-
-.center {
-  padding-left: calc(50%, 720px);
-  padding-right: calc(50%, 720px);
 }
 
 .header {
@@ -85,9 +52,14 @@ a {
   line-height: 50px; /* 250% */
 }
 
+.content_site {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title_image {
   background-image: url(./image/welcome.jpg);
-  width: 1440px;
+  /* width: 1440px; */
   height: 600px;
 }
 
@@ -145,16 +117,22 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 200% */
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .about_images {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about_image {
+  margin-bottom: 20px;
 }
 
 .about_img-pic {
-  margin: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
 }
@@ -178,14 +156,15 @@ a {
 }
 
 .favorites_top {
+  /* margin-top: 40px; */
+  /* margin-bottom: 40px; */
+  margin: 40px 20px;
 }
 
 .favorites_top-text {
-  margin-top: 40px;
-  margin-bottom: 40px;
   color: #000;
   /* text-align: center; */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -196,7 +175,7 @@ a {
   display: flex;
   gap: 90px;
   color: #000;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -205,6 +184,83 @@ a {
 }
 
 .favorites_books {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 260px;
+  row-gap: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
+.first_book {
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.first_book_head {
+  color: #000;
+  font-family: "Forum";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.first_book_head-line {
+  width: 60px;
+  height: 1px;
+  background: #bb945f;
+}
+
+.first_book_top {
+  margin: 20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.first_book_top-author {
+  text-transform: capitalize;
+}
+
+.first_book_text {
+  width: 355px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px;
+  margin-bottom: 15px;
+}
+
+.first_book_buttom {
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  padding: 9px 27px;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin: 15px 20px;
+}
+
+.first_book_image {
   
 }
