@@ -559,17 +559,6 @@ a {
   line-height: 150%; /* 27px */
 }
 
-.point_1 {
-  fill: #f3602d;
-}
-
-.point_2 {
-  fill: #149211;
-}
-
-.point_3 {
-  fill: #ffc700;
-}
 /* funfact end */
 /* mail box start */
 .mail_box {
@@ -612,5 +601,17 @@ a {
     display: flex;
     padding: 17px;
 }
+
+.mail_box_left_form-web_address {
+    color: #666;
+    background: #EEE;
+    border: none;
+    font-family: 'Gilroy-Medium';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+}
+
 
 /* mail box end */
