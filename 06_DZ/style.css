@@ -86,25 +86,21 @@
 /* title end */
 /* offer start */
 .offer_card {
-    fill: rgba(33, 22, 22, 0.70);
-    width: 360px;
-    height: 260px;
-    flex-shrink: 0;
+    padding: 105px 0;
+    position: relative;
 }
-
-.offer_card {
-    padding: 105px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    fill: rgba(33, 22, 22, 0.70);
-    /* z-index: 2; */
+    
+.offer_card_background {
+    /* background-image: url(./img/offer_card_1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* height: 100%; */
+    position: absolute;
 }
-
+    
 .offer_card-1 {
-    background: url(./img/offer_card_1.jpg);
-    height: 100%;
+    background: rgba(33, 22, 22, 0.7);
+    position: absolute;
+
 }
 
 .offer_card-text {
