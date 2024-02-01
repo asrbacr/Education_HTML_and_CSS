@@ -122,3 +122,9 @@
     line-height: normal;
 }
 /* offer end */
+
+/*  
+opacity: ; - делает светлее, а это темнее
+filter: brightness(0.5);
+*/
+
