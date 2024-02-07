@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 400px);
+  padding-right: calc(50% - 400px);
+}
+
+.carousel-control-next-icon {
+  background-image: url("./img/g-right.png");
+}
+
+.carousel-control-prev-icon {
+  /* background-image: url("./img/g-right.png"); */
+  filter: brightness(0) saturate(100%) invert(17%) sepia(6%) saturate(6854%)
+
+}
