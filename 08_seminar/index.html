@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
 </head>
 <body>
     <form class="form" action="">
@@ -14,18 +15,25 @@
         <label for="email_input">Имейл: </label>
         <input type="email" name="email" id="email_input" required>
         <label for="pass_input">Пароль: </label>
-        <input type="password" name="password" id="pass_input" required>
+        <input type="password" name="password" id="pass_input" required class="fa-solid fa-shield-halved">
         <label for="date_input">Дата рождения: </label>
         <input type="date" name="date" id="date_input" required>
         <label for="tel_input">Номер телефона: </label>
         <input type="tel" name="tel" id="tel_input" required>
         <label for="range">Ползунок: </label>
-        <input type="range" id="volume" name="volume" min="0" max="11" / required> 
-        <label for="checkbox">Согласится с условиями</label>
-        <input type="checkbox" name="checkbox" id="checkbox_input" required class="fa-thin fa-square-check">
+        <input type="range" id="volume" name="volume" min="0" max="11" / required>
+        <div class="checkbox_div">
+            <input type="checkbox" name="checkbox" id="checkbox_input" required class="checkbox_div_castom fa-solid fa-bars">
+            <!-- <input type="checkbox" name="checkbox" id="checkbox_input" required class="fa-solid fa-bars"> -->
+            <label for="checkbox" class="checkbox_div_lable">Согласится с условиями</label>
+        </div> 
         <button type="submit" class="button_input">Отправить</button>
     </form>
-    
+
+    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+    <label for="happy">Happy</label>
+
+
 
 </body>
 </html>
