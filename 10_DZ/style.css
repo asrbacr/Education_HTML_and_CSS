@@ -3,3 +3,17 @@
     padding-right: calc(50% - 570px);
 }
 
+.navbar .navbar-nav .nav-link svg {
+    filter: invert(99%) sepia(1%) saturate(266%) hue-rotate(166deg) brightness(114%) contrast(82%);
+}
+
+.navbar .navbar-nav .nav-link .nav-link_burger-elem {
+    display: flex;
+
+}
+
+.navbar .navbar-nav .nav-link .nav-link_burger-elem .nav-link_burger-elem-line {
+    width: 32px;
+    height: 1px;
+    color: #E8E8E8;
+}
