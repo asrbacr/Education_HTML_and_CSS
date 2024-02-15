@@ -1,0 +1,50 @@
+@import "vars";
+@import "mixins";
+
+%fontStyle {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  //   text-decoration: none;
+}
+
+// Однострочный комментарий Ctrl+/
+// Не попадает в CSS
+/* Многострочный комментарий Alt+Shift+A */
+/* Попадает в CSS */
+
+.container {
+  max-width: $sizeWightPage;
+
+  span {
+    color: $colorPage;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: $gapPage;
+
+  &__link {
+    text-decoration: none;
+    @extend %fontStyle;
+  }
+}
+
+.content {
+  gap: $gapPage;
+
+//   мексины. задано значение и по умолчанию, если ничего не вводить, то подставляется оно, иначе нужно ввести руками
+  @include displayFlex(start);
+
+  &__item {
+    width: $sizeWightPage / 4;
+    border: $borderContent;
+    height: 200px;
+    background-color: $colorPage;
+  }
+}
