@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -27,6 +28,12 @@ body {
   &_logo_group_logo {
     display: flex;
     gap: 41px;
+    align-items: center;
+  }
+
+  &_nav {
+    display: flex;
+    gap: 33px;
     align-items: center;
   }
 }
@@ -139,7 +146,7 @@ body {
   align-items: center;
 
   // это удалить ↓
-//   margin-bottom: 48px;
+  //   margin-bottom: 48px;
 
   &_header {
     display: flex;
@@ -174,57 +181,91 @@ body {
     width: 360px;
     background-color: #f8f8f8;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &_img {
+      position: relative;
+      height: 420px;
+    }
+
+    &-img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 1;
+      transition: .3s;
+    }
+
+    &_img:hover {
+      .products_card-img {
+        filter: brightness(0.3);
+      }
+
+      .products_card_img-button {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        padding: 11px 16px 9px 14px;
+        border: 2px solid #fff;
+        left: 111px;
+        top: 156px;
+        position: absolute;
+
+        .products_card_img-button-text {
+          display: block;
+          color: #fff;
+          font-family: 'Lato';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
+    }
 
     &_down {
-        display: flex;
-        padding: 24px 16px;
-        flex-direction: column;
-        gap: 16px;
-        // overflow: hidden;
-        
-        &_header {
-            font-family: 'Lato';
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 16px;
-        }
+      display: flex;
+      padding: 24px 16px;
+      flex-direction: column;
+      gap: 16px;
+      overflow: hidden;
 
-        &_text {
-            color: #5d5d5d;
-            font-family: 'Lato';
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 17px;
-        }
+      &_header {
+        font-family: "Lato";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+      }
 
-        &_price {
-            color: $colorSiteMainElement;
-            font-family: 'Lato';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-        }
-    }
+      &_text {
+        color: #5d5d5d;
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+      }
 
-  }
-
-  &_button {
-      border: 1px solid #FF6A6A;
-      padding: 15px 38px;
-      
-    a {
-        text-decoration: none;
-    }
-
-      &_link {
-        color: #f26376;
-        font-family: 'Lato';
+      &_price {
+        color: $colorSiteMainElement;
+        font-family: "Lato";
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
+      }
+    }
+  }
+
+  &_button {
+    border: 1px solid #ff6a6a;
+    padding: 15px 38px;
+
+    &_link {
+      color: #f26376;
+      font-family: "Lato";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
     }
   }
 }
