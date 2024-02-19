@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .center {
@@ -63,7 +63,6 @@ body {
 
   &-header {
     color: #222;
-    font-family: Lato;
     font-size: 48px;
     font-weight: 900;
     max-width: 377px;
@@ -72,7 +71,6 @@ body {
 
     &-down {
       color: #222;
-      font-family: Lato;
       font-size: 32px;
       font-style: normal;
       font-weight: 700;
@@ -116,7 +114,6 @@ body {
     &-text {
       color: #fff;
       text-align: center;
-      font-family: "Lato";
       font-size: 16px;
       font-weight: 400;
       text-transform: uppercase;
@@ -124,7 +121,6 @@ body {
 
     &-group {
       color: $colorSiteMainElement;
-      font-family: "Lato";
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
@@ -156,7 +152,6 @@ body {
 
     &-head {
       color: #222;
-      font-family: "Lato";
       font-size: 30px;
       font-weight: 400;
       line-height: 36px;
@@ -164,7 +159,6 @@ body {
 
     &-text {
       color: #9f9f9f;
-      font-family: "Lato";
       font-size: 14px;
       font-weight: 400;
       line-height: 17px;
@@ -216,7 +210,6 @@ body {
         .products_card_img-button-text {
           display: block;
           color: #fff;
-          font-family: 'Lato';
           font-size: 14px;
           font-weight: 400;
           line-height: 17px;
@@ -232,7 +225,6 @@ body {
       overflow: hidden;
 
       &_header {
-        font-family: "Lato";
         font-size: 13px;
         font-weight: 400;
         line-height: 16px;
@@ -240,7 +232,6 @@ body {
 
       &_text {
         color: #5d5d5d;
-        font-family: "Lato";
         font-size: 14px;
         font-weight: 300;
         line-height: 17px;
@@ -248,7 +239,6 @@ body {
 
       &_price {
         color: $colorSiteMainElement;
-        font-family: "Lato";
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -262,10 +252,90 @@ body {
 
     &_link {
       color: #f26376;
-      font-family: "Lato";
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
     }
   }
+}
+
+.page_product {
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background-color: #F8F3F4;
+
+
+      &_left a {
+        color: $colorSiteMainElement;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+      
+      &_right {
+        color: $colorSiteMainElement;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+
+    &_title {
+
+      &_slider {
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        padding: 11px 0px;
+      }
+
+      &_product_description {
+        margin-top: -64px;
+        padding: 65px 0px;
+
+        &_name {
+          color: $colorSiteMainElement;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 17px;
+          text-transform: uppercase;
+          
+        }
+
+        &_border {
+          margin-top: 12px;
+          border-bottom: 3px solid #EF5B70;
+          width: 63px;
+        }
+        
+        &_header {
+          margin-top: 12px;
+          color: #4d4d4d;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 22px;
+          text-transform: uppercase;
+        }
+
+        &_text {
+          margin-top: 49px;
+          width: 555px;
+          
+        }
+
+      }
+
+    }
+
+
+
+
 }
