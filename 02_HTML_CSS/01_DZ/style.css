@@ -222,7 +222,7 @@ body {
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #F8F3F4;
+  background-color: #f8f3f4;
 }
 .page_product_top_left a {
   color: #F16D7F;
@@ -240,14 +240,22 @@ body {
   font-weight: 900;
 }
 .page_product_title_slider {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   padding: 11px 0px;
 }
 .page_product_title_product_description {
   margin-top: -64px;
-  padding: 65px 0px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.page_product_title_product_description_border {
+  border: 1px solid rgb(234, 234, 234);
 }
 .page_product_title_product_description_name {
   color: #F16D7F;
@@ -258,7 +266,7 @@ body {
 }
 .page_product_title_product_description_border {
   margin-top: 12px;
-  border-bottom: 3px solid #EF5B70;
+  border-bottom: 3px solid #ef5b70;
   width: 63px;
 }
 .page_product_title_product_description_header {
@@ -270,6 +278,45 @@ body {
   text-transform: uppercase;
 }
 .page_product_title_product_description_text {
+  color: #5e5e5e;
   margin-top: 49px;
   width: 555px;
+}
+.page_product_title_product_description_price {
+  margin-top: 32px;
+  color: #ef5b70;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.page_product_title_product_description_hr {
+  margin-top: 65px;
+  width: 641px;
+  height: 1px;
+  background-color: #ef5b70;
+}
+.page_product_title_product_description_filter_group {
+  display: flex;
+  gap: 23px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+.page_product_title_product_description_filter_group a {
+  display: flex;
+  gap: 9px;
+}
+.page_product_title_product_description_filter_group_color_name {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.page_product_title_product_description_filter_group_color_svg {
+  fill: #6f6e6e;
+  margin-top: -5px;
+}
+.page_product_title_product_description_button_link {
+  display: flex;
+  gap: 23px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
