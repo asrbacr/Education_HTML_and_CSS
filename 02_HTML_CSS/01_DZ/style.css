@@ -114,6 +114,7 @@ body {
 
 .products {
   margin-top: 96px;
+  margin-bottom: 96px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -257,6 +258,7 @@ body {
   align-items: center;
   margin-top: 12px;
   width: 1140px;
+  background-color: #fff;
 }
 .page_product_title_product_description_name {
   color: #F16D7F;
@@ -327,10 +329,14 @@ body {
   margin-bottom: 129px;
 }
 
+.footer {
+  background-image: url("./img/footer_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .footer_head {
   display: flex;
-  gap: 327px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 97px;
   padding-bottom: 126px;
@@ -347,4 +353,73 @@ body {
 .footer_head_left_text {
   width: 360px;
   text-align: center;
+  color: rgb(34, 34, 36);
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer_head_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.footer_head_right_text {
+  color: rgb(34, 34, 36);
+  font-size: 18px;
+  font-weight: 400;
+  width: 440px;
+  text-align: center;
+}
+.footer_head_right_header {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer_head_right_input {
+  display: flex;
+}
+.footer_head_right_input_email {
+  background-color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding: 17px 22px;
+}
+.footer_head_right_input_button {
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  padding: 17px 22px;
+}
+.footer_head_right_input_button:hover {
+  color: #eaeaea;
+  cursor: pointer;
+}
+.footer_head_right_input_button:active {
+  transform: matrix(1.1, 0, 0, 1, 6, 0);
+}
+.footer_down {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.footer_down_left {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.footer_down_icons {
+  display: flex;
+  gap: 7px;
 }/*# sourceMappingURL=style.css.map */
