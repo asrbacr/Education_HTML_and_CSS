@@ -297,15 +297,16 @@ body {
 
     &_product_description {
       margin-top: -64px;
-      padding-top: 65px;
-      padding-bottom: 65px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: nowrap;
-
-      &_border {
-        border: 1px solid rgb(234, 234, 234);
+      
+      &_outer_frame {
+        padding-top: 65px;
+        padding-bottom: 65px;
+        border: 1px solid #eaeaea;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12px;
+        width: 1140px;
       }
 
       &_name {
@@ -319,7 +320,7 @@ body {
       &_border {
         margin-top: 12px;
         border-bottom: 3px solid #ef5b70;
-        width: 63px;
+        width: 64px;
       }
 
       &_header {
@@ -335,6 +336,7 @@ body {
         color: #5e5e5e;
         margin-top: 49px;
         width: 555px;
+        text-align: center;
       }
 
       &_price {
@@ -381,6 +383,39 @@ body {
         display: flex;
         gap: 23px;
         align-items: center;
+      }
+    }
+
+  }
+
+  &_additional_cards {
+    margin-top: 129px;
+    margin-bottom: 129px;
+  }
+}
+
+.footer {
+  
+  &_head {
+    display: flex;
+    gap: 327px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 97px;
+    padding-bottom: 126px;
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      &_pic {
+        width: 96px;
+      }
+      &_text {
+        width: 360px;
+        text-align: center;
       }
     }
   }
