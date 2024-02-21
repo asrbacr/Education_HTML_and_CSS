@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+/* details[open] summary::before {
+  content: "\2193";
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+details[close] .close {
+    display: none;
+}
+
+details[open] .open {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "\2192";
+  padding-right: 5px;
+  margin-left: 10px;
+} */
+/* .sort_menu {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    content: url("./image/Vector_1.svg");
+  }
+}
+
+.lable_check_box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  position: absolute;
+
+  &-input {
+      text-transform: uppercase;
+    }
+
+} */
+input {
+  position: absolute;
+  left: 9999999;
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
