@@ -1,0 +1,23 @@
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  &_conture {
+    max-width: 100%;
+  }
+
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(234, 234, 234);
+    box-sizing: border-box;
+  }
+
+  &-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}

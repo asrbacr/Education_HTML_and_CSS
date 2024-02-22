@@ -1,4 +1,5 @@
 @import "vars";
+@import "swiper";
 
 * {
   margin: 0;
@@ -289,15 +290,18 @@ body {
   }
 
   &_title {
+    position: relative;
     &_slider {
       background-color: #f7f7f7;
       display: flex;
       justify-content: center;
-      padding: 11px 0px;
     }
 
     &_product_description {
+      position: absolute;
+      z-index: 2;
       margin-top: -64px;
+      height: 600px;
 
       &_outer_frame {
         padding-top: 65px;
@@ -399,7 +403,7 @@ body {
   &_head {
     padding-top: 104px;
     padding-bottom: 104px;
-    background-color:  #222224;
+    background-color: #222224;
     display: flex;
     gap: 30px;
 
