@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,63 +9,72 @@ html, body {
   overflow: hidden;
 }
 
-/* details[open] summary::before {
-  content: "\2193";
+.task_1 details[open] summary::before {
+  content: "↓";
 }
-
-summary {
+.task_1 summary {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-details[close] .close {
-    display: none;
-}
-
-details[open] .open {
-  display: block;
-}
-
-summary::-webkit-details-marker {
+.task_1 details[close] .close {
   display: none;
 }
-
-summary::before {
-  content: "\2192";
+.task_1 details[open] .open {
+  display: block;
+}
+.task_1 summary::-webkit-details-marker {
+  display: none;
+}
+.task_1 summary::before {
+  content: "→";
   padding-right: 5px;
   margin-left: 10px;
-} */
-/* .sort_menu {
+}
+
+.task_2 {
+  margin-top: 30px;
+}
+.task_2 .sort_menu {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
 }
-
-summary {
+.task_2 summary {
   display: flex;
   align-items: center;
   gap: 10px;
-
-  &::after {
-    content: url("./image/Vector_1.svg");
-  }
 }
-
-.lable_check_box {
+.task_2 summary::after {
+  content: url("./image/Vector_1.svg");
+}
+.task_2 .lable_check_box {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-top: 10px;
   position: absolute;
+}
+.task_2 .lable_check_box-input {
+  text-transform: uppercase;
+}
 
-  &-input {
-      text-transform: uppercase;
-    }
-
-} */
-input {
+.task_3 {
+  margin-top: 30px;
+}
+.task_3 input {
   position: absolute;
-  left: 9999999;
-  visibility: hidden;
+  left: -9999999px;
+}
+.task_3 .box {
+  position: relative;
+  min-height: 100vh;
+}
+.task_3 .content {
+  position: absolute;
+  right: 0;
+  transition: right 1s;
+}
+.task_3 input:checked ~ .content {
+  right: -250px;
 }/*# sourceMappingURL=style.css.map */
