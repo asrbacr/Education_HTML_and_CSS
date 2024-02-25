@@ -400,19 +400,15 @@ body {
 }
 
 .filter {
-  // position: relative;
-  height: 132px;
+  height: 64px;
   padding-top: 39px;
-  // box-sizing: border-box;
   display: flex;
   gap: 30px;
 
   &_details {
     padding-top: 13px;
-    // padding: 13px 16px 16px;
     width: 360px;
     position: relative;
-    // top: 39px;
     z-index: 10;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -440,7 +436,6 @@ body {
         font-weight: 400;
         line-height: 17px;
         list-style: none;
-
       }
 
       &_links {
@@ -480,7 +475,6 @@ body {
     align-items: center;
     padding-left: 16px;
 
-
     &_heading {
       color: #000;
       font-size: 14px;
@@ -490,8 +484,56 @@ body {
   }
 
   &_sort {
-    // position: absolute;
-    top: 51px;
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+    
+    &_group {
+      position: relative;
+
+      &[open] .filter_sort_group_heading > svg {
+        transform: rotate(180deg);
+      }
+
+      &_heading {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        list-style: none;
+
+        &_text {
+          color: #6f6e6e;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
+
+      &_checkbox {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        background: #fff;
+        padding: 7px 30px 11px 10px;
+        margin-top: 5px;
+        z-index: 10;
+        position: absolute;
+        left: -9px;
+        
+        &_label {
+          display: flex;
+          color: #6f6e6e;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+        }
+
+        &_input {
+          margin-right: 9px;
+        }
+      }
+    }
   }
 }
 
