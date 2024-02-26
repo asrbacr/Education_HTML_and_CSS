@@ -58,14 +58,53 @@ html, body {
       box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
       background: #fff;
       width: 232px;
-      padding: 32px;
+      padding: 37px 34px 32px;
       box-sizing: border-box;
       position: absolute;
       top: 78px;
       right: 0px;
       transition: right 0.3s;
+      z-index: 1;
 
-      /* burger_nav стили */
+      .nav {
+        &_header {
+          color: #000;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 17px;
+          text-transform: uppercase;
+        }
+
+        &_group {
+
+          &_name {
+            list-style: none;
+            color: $colorSiteMainElement;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            padding: 20px 0px 0px;
+            text-transform: uppercase;
+          }
+
+          &_elements {
+            display: flex;
+            flex-direction: column;
+            // gap: 11px;
+            padding-left: 21px;
+          }
+          
+          &_link {
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            margin-top: 11px;
+            
+          }
+        }
+      }
+
     }
 
   }
