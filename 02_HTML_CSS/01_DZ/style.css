@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .swiper {
   margin-left: auto;
   margin-right: auto;
@@ -29,6 +30,11 @@
 
 body {
   font-family: "Lato", sans-serif;
+  height: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .center {
@@ -36,6 +42,9 @@ body {
   padding-right: calc(50% - 570px);
 }
 
+.header {
+  position: relative;
+}
 .header_logo_group {
   background: #222;
   display: flex;
@@ -53,6 +62,26 @@ body {
   display: flex;
   gap: 33px;
   align-items: center;
+}
+.header_nav #burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+.header_nav #burger:checked ~ nav {
+  right: -232px;
+}
+.header_nav .burger_nav {
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  background: #fff;
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 78px;
+  right: 0px;
+  transition: right 0.3s;
+  /* burger_nav стили */
 }
 
 .title {
