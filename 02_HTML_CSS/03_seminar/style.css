@@ -1,0 +1,67 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-1 {
+  font-family: "Merriweather";
+  font-size: 40px;
+}
+
+.text-2 {
+  font-family: "Open Sans";
+  font-size: 40px;
+}
+
+/* created with http://protocoder.ru/css/strokeTextGen */
+.ts {
+  font-family: Arial;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0 -1px 1px #bb99d8, 0 -1px 1px #bb99d8, 0 1px 1px #bb99d8, 0 1px 1px #bb99d8, -1px 0 1px #bb99d8, 1px 0 1px #bb99d8, -1px 0 1px #bb99d8, 1px 0 1px #bb99d8, -1px -1px 1px #bb99d8, 1px -1px 1px #bb99d8, -1px 1px 1px #bb99d8, 1px 1px 1px #bb99d8, -1px -1px 1px #bb99d8, 1px -1px 1px #bb99d8, -1px 1px 1px #bb99d8, 1px 1px 1px #bb99d8;
+}
+
+/* http://shpargalkablog.ru/2017/06/text-stroke.html */
+.ts-2 {
+  color: transparent;
+  -webkit-text-stroke: 1px blue;
+  font-size: 45px;
+}
+
+/* https://atuin.ru/tools/clip-path/ */
+.figur {
+  width: 760px;
+  height: 500px;
+  background-image: url("https://avatars.mds.yandex.net/get-mpic/5255532/img_id8773678452111426033.jpeg/orig");
+  -webkit-clip-path: polygon(48.42% 2.31%, 60.27% 10.52%, 40% 35%, 95% 35%, 20% 100%, 42.16% 56.28%, 9.37% 50.12%, 39.82% 34.99%);
+          clip-path: polygon(48.42% 2.31%, 60.27% 10.52%, 40% 35%, 95% 35%, 20% 100%, 42.16% 56.28%, 9.37% 50.12%, 39.82% 34.99%);
+}
+
+.border__radius {
+  border-image-slice: 24 27 25 18;
+  border-image-width: 12px 12px 12px 12px;
+  border-image-outset: 2px 0px 0px 0px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+/* Хлебные крошки */
+.breadcrumb__ul {
+  display: flex;
+}
+.breadcrumb__li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.breadcrumb__li:not(:last-child)::after {
+  content: "/";
+  padding: 8px;
+}
+.breadcrumb__li:last-child {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
