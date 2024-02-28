@@ -12,13 +12,20 @@ body {
   height: 100%;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .header {
@@ -48,7 +55,7 @@ html, body {
       position: absolute;
       left: -999999px;
       visibility: hidden;
-      
+
       &:checked ~ nav {
         right: -232px;
       }
@@ -76,7 +83,6 @@ html, body {
         }
 
         &_group {
-
           &_name {
             list-style: none;
             color: $colorSiteMainElement;
@@ -93,46 +99,42 @@ html, body {
             // gap: 11px;
             padding-left: 21px;
           }
-          
+
           &_link {
             color: #6f6e6e;
             font-size: 14px;
             font-weight: 400;
             line-height: 17px;
             margin-top: 11px;
-            
           }
         }
       }
-
     }
-
   }
 }
 
 /* по БЭМ */
 .breadcrumb {
-    
   &__ul {
-      display: flex;
+    display: flex;
   }
-  
+
   &__li {
     font-weight: 300;
     text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
-    
+
     &:not(:last-child)::after {
-        content: "/";
-        padding: 8px;
-      }
-      
-      &:last-child {
-        font-weight: 700;
-      }
+      content: "/";
+      padding: 8px;
     }
-    
+
+    &:last-child {
+      font-weight: 700;
+    }
+  }
+
   &__link {
     color: $colorSiteMainElement;
     font-family: Lato;
@@ -379,7 +381,7 @@ html, body {
       line-height: 29px;
     }
 
-/*     &_right {
+    /*     &_right {
       color: $colorSiteMainElement;
       font-size: 14px;
       font-weight: 700;
@@ -502,14 +504,66 @@ html, body {
 }
 
 .lists-cart {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.address {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__header {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  } 
+  
+  &__input {
+    padding: 13px 17px 16px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    border: 1px solid rgb(164, 164, 164);
+
+    &::placeholder {
+      color: #b1b1b1;
+    }
+  }
+
+  &__button {
+    border: 1px solid rgb(164, 164, 164);
+    padding: 10px 14px;
+    max-width: 107px;
+    color: rgb(74, 74, 74);
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+
+    &:hover {
+      background: $colorSiteMainElement;
+      color: #fff;
+    }
+  }
+
 }
 .cart {
   width: 652px;
   display: flex;
   gap: 31px;
-  align-items: center;
   box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
 
   .cart-group {
@@ -520,10 +574,37 @@ html, body {
     padding-top: 22px;
     padding-bottom: 62px;
 
+    &__header {
+      display: flex;
+      gap: 100px;
+      padding-right: 22px;
+
+      & svg {
+        cursor: pointer;
+      }
+    }
+
     &__content {
       display: flex;
       flex-direction: column;
       gap: 6px;
+    }
+
+    .quantity {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      &__number {
+        padding: 1px 16px;
+        max-width: 22px;
+        border: 1px solid #eaeaea;
+        color: rgb(101, 101, 101);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+      }
     }
   }
 
@@ -532,6 +613,38 @@ html, body {
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
+  }
+
+  &__data {
+    color: #575757;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  &__price_numder {
+    color: #ef5b70;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    padding: 17px 40px;
+    border: 1px solid #a4a4a4;
+
+    &:hover {
+      cursor: pointer;
+      background: $colorSiteMainElement;
+      color: #fff;
+      border: none;
+    }
   }
 
 
@@ -625,7 +738,7 @@ html, body {
     padding-top: 12px;
     display: flex;
     gap: 18px;
-    
+
     &_group {
       position: relative;
 
@@ -658,7 +771,7 @@ html, body {
         z-index: 10;
         position: absolute;
         left: -9px;
-        
+
         &_label {
           display: flex;
           color: #6f6e6e;
