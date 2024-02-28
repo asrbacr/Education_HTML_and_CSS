@@ -110,6 +110,37 @@ html, body {
   }
 }
 
+/* по БЭМ */
+.breadcrumb {
+    
+  &__ul {
+      display: flex;
+  }
+  
+  &__li {
+    font-weight: 300;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+    &:not(:last-child)::after {
+        content: "/";
+        padding: 8px;
+      }
+      
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+    
+  &__link {
+    color: $colorSiteMainElement;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
 .title {
   background-color: #f1e4e6;
   /* margin-left: -170px; */
@@ -348,7 +379,7 @@ html, body {
       line-height: 29px;
     }
 
-    &_right {
+/*     &_right {
       color: $colorSiteMainElement;
       font-size: 14px;
       font-weight: 700;
@@ -357,7 +388,7 @@ html, body {
       span {
         font-weight: 900;
       }
-    }
+    } */
   }
 
   &_title {
@@ -468,6 +499,42 @@ html, body {
     margin-top: 729px;
     margin-bottom: 129px;
   }
+}
+
+.lists-cart {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.cart {
+  width: 652px;
+  display: flex;
+  gap: 31px;
+  align-items: center;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+
+  .cart-group {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    box-sizing: border-box;
+    padding-top: 22px;
+    padding-bottom: 62px;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
+
+  &__name {
+    color: #222;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+
 }
 
 .filter {
