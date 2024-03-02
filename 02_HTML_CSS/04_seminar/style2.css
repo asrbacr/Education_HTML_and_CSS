@@ -1,0 +1,59 @@
+/* task 4 */
+.navigator {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      .sub__menu {
+        display: none;
+        position: absolute;
+        background-color: red;
+        padding: 10px;
+      }
+
+      &:hover {
+        .sub__menu {
+          display: block;
+
+          &:active {
+            background-color: yellowgreen;
+          }
+        }
+      }
+    }
+  }
+}
+
+.task_5 {
+  margin-top: 50px;
+}
+
+.task_5__title {
+  color: red;
+  font-size: 48px;
+}
+
+.task_6 {
+  margin-top: 50px;
+}
+
+@scope (.subtitle) {
+  .task_5__title {
+    color: green;
+  }
+}
+
+@media (width < 768px) {
+  .task_6 .title {
+    color: blue;
+  }
+}
+
+@media (width >= 1024px) {
+  .task_6 .title {
+    color: red;
+  }
+}

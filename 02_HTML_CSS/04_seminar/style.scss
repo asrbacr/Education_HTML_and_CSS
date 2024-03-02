@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.task_1 {
+  .section {
+    width: 200px;
+    height: 30px;
+    background-color: green;
+  }
+
+  /* has - стелизуем блок .section только те в нутри которых есть класс .text*/
+  .section:has(.text) {
+    background: aquamarine;
+  }
+}
+
+.task_2 {
+    margin-top: 50px;
+
+  .title.title:nth-of-type(3n) {
+    background-color: red;
+  }
+}
+
+.task_3 {
+  margin-top: 50px;
+
+  .text {
+    font-size: 16px;
+    font-weight: 300;
+    width: 300px;
+  }
+
+  .text::first-letter {
+    initial-letter: 4 5;
+    color: red;
+    margin-right: 20px;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+.task_4 {
+  margin-top: 50px;
+}
+
