@@ -371,7 +371,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   gap: 18px;
 
-  &__navigate ~ path{
+  &__navigate ~ path {
     fill: #000;
   }
 
@@ -379,10 +379,10 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
-    color: #C4C4C4;
+    color: #c4c4c4;
 
     &_active {
-      color: #EF5B70;
+      color: #ef5b70;
     }
   }
 }
@@ -557,8 +557,8 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
-  } 
-  
+  }
+
   &__input {
     padding: 13px 17px 16px;
     color: #222;
@@ -567,6 +567,7 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 16px;
     text-align: left;
     border: 1px solid rgb(164, 164, 164);
+    outline: none;
 
     &::placeholder {
       color: #b1b1b1;
@@ -589,7 +590,6 @@ input[type="number"]::-webkit-outer-spin-button {
       cursor: pointer;
     }
   }
-
 }
 
 .checkout {
@@ -607,7 +607,7 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 13px;
     margin-right: -9px;
   }
-  
+
   &__grand {
     font-size: 16px;
     font-weight: 300;
@@ -621,9 +621,9 @@ input[type="number"]::-webkit-outer-spin-button {
       color: $colorSiteMainElement;
     }
   }
-  
+
   &__hr {
-    border: 1px solid #E2E2E2;
+    border: 1px solid #e2e2e2;
     margin-top: 20px;
     width: 100%;
   }
@@ -727,8 +727,6 @@ input[type="number"]::-webkit-outer-spin-button {
       border: none;
     }
   }
-
-
 }
 
 .filter {
@@ -872,11 +870,22 @@ input[type="number"]::-webkit-outer-spin-button {
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
 
-  &__form {
+  &__right {
     display: flex;
     flex-direction: column;
-    max-width: 359px;
+    gap: 22px;
+  }
+
+  &__form {
+    
+    &_container {
+      display: flex;
+      flex-direction: column;
+      max-width: 359px;
+    }
   }
 
   &__label {
@@ -886,9 +895,9 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 19px;
     margin-bottom: 20px;
   }
-  
+
   &__input {
-    color: #b1b1b1;
+    color: #222;
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
@@ -901,7 +910,7 @@ input[type="number"]::-webkit-outer-spin-button {
   &__gender {
     display: flex;
     gap: 10px;
-    margin-top: 32px;
+    margin-top: 12px;
     margin-bottom: 32px;
 
     .gender__radio {
@@ -917,6 +926,81 @@ input[type="number"]::-webkit-outer-spin-button {
       margin-right: 10px;
     }
   }
+
+  &__explanation {
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    padding: 16px 29px;
+    text-transform: uppercase;
+    border: 1px solid #a4a4a4;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &_arrow path {
+      fill: #000;
+    }
+    
+    &:hover {
+      background: $colorSiteMainElement;
+      border: 1px solid $colorSiteMainElement;
+      color: #fff;
+      box-sizing: border-box;
+      cursor: pointer;
+      
+      .registration__button_arrow path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__header {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    max-width: 652px;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__perks {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    list-style: none;
+
+    &::before {
+      content: url('./img/icon/tick.svg');
+      margin-right: 22px;
+    }
+  }
+
+
 }
 
 .footer {
