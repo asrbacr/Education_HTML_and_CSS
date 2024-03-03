@@ -238,17 +238,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .products {
-  // margin-top: 64px;
+  margin-top: 64px;
   margin-bottom: 96px;
 
-  // когда products_button и products_cards будут готовы включить ↓
   display: flex;
   flex-direction: column;
   gap: 48px;
   align-items: center;
-
-  // это удалить ↓
-  //   margin-bottom: 48px;
 
   &_header {
     display: flex;
