@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* для task-4 */
+html {
+    scroll-behavior: smooth;
+}
+
+.task_1 {
+    .box {
+        /* width: 200px; */
+        /* height: 200px;  */
+        text-shadow: 1px 1px 1px #000;
+        color: #fff;
+    }
+    
+    .box-1 {
+        /* width: 200px; */
+        /* height: 200px; */
+        font-size: 20px;
+        color: #fff;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+
+    }
+}
+
+.task_2 {
+    margin-top: 100px;
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #000;
+    }
+
+    .r1 {
+        border-bottom-right-radius: 40px;
+    }
+
+    .r2 {
+        border-radius: 0 10px 20px;
+    }
+
+    .r3 {
+        border-radius: 10px 20px;
+    }
+
+    .r4 {
+        border-radius: 100px/20px;
+    }
+
+    .r5 {
+        border-radius: 50px 100px 15px 30px/30px 15px 10px 5px;
+    }
+
+    .r6 {
+        border-radius: 100px 20px 30px 40px/30px;
+    }
+
+    .r7 {
+        /* Круг - овал */
+        border-radius: 50%;
+    }
+
+    .r8 {
+        /* Скобки */
+        border-top: none;
+        border-bottom: none;
+        border-radius: 30px/90px;
+    }
+
+    .r9 {
+        border-bottom-left-radius: 100px;
+    }
+
+    .r10 {
+        /* Лепесток */
+        border-radius: 0 100%;
+    }
+    
+    .r11 {
+        /* Капелька */
+        border-radius: 0 50% 50% 50%;
+    }
+
+    .r12 {
+        border-top-left-radius: 100% 20px;
+        border-bottom-right-radius: 100% 20px;
+    }
+
+    .box-1 {
+        /* создать треугольник css генератор */
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 60px 120px 60px;
+        border-color: transparent transparent #4f46e5 transparent;
+
+    }
+}
+
+.task_3 {
+    margin-top: 100px;
+
+    .content {
+        background-color: #ccc;
+        height: 700px;
+    }
+
+    .content-header {
+        height: 50px;
+        background-color: #555;
+        position: sticky;
+        top: 0;
+    }
+
+    .parallax {
+        min-height: 250px;
+        background-image: url(https://img.freepik.com/free-photo/spaceship-orbits-dark-galaxy-glowing-blue-comet-generated-by-ai_188544-9662.jpg?t=st=1709545697~exp=1709549297~hmac=e7379de4b3cf4ead682efff52aa04d11b422ab49c8b08f8a4bb359093ecf2818&w=1380);
+        background-attachment: fixed;
+    }
+
+}
+
+.task_4 {
+    margin-top: 100px;
+
+    .content {
+        background-color: #ccc;
+        min-height: 700px;
+    }
+
+    .menu {
+        position: sticky;
+        width: 20%;
+        top: 20%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .main {
+        margin-left: 20%;
+    }
+
+    .parallax {
+        min-height: 250px;
+        background-image: url(https://img.freepik.com/free-photo/top-view-old-french-newspaper-pieces_23-2149318857.jpg?t=st=1709546536~exp=1709550136~hmac=3cce7673d4faa06b3a242ec5d9c28b605ebb1756574519772eeeb42929a68d84&w=1380);
+        background-attachment: fixed;
+    }
+
+}
