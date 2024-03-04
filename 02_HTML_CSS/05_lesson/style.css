@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* для task_2 */
+/* .html {
+  font-size: 10px; 
+} */
+
+/* для task_3 */
+html {
+  font-size: 16px;
+}
+
+.task_1 {
+  .top {
+    background-color: #ccc;
+    min-height: 100vh;
+
+    /* Плохое решение ↓ */
+    /* height: 10vh; */
+    /* overflow-y: scroll; */
+
+    border: 5px solid red;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-box-shadow: 0px 0px 32px 16px rgba(92, 111, 43, 0.3) inset; */
+    /* -moz-box-shadow: 0px 0px 32px 16px rgba(92, 111, 43, 0.3) inset; */
+    box-shadow: 0px 0px 32px 16px rgba(92, 111, 43, 0.8) inset;
+  }
+
+  .title {
+    width: 50vw;
+    text-align: center;
+  }
+
+  .block {
+    min-height: 100vh;
+    background-color: #234567;
+    position: relative;
+
+    .block__header {
+      height: 150px;
+      background-color: #555;
+      position: sticky;
+      top: 100px;
+      left: 0;
+      width: 250px;
+    }
+  }
+
+  .item {
+    background-color: forestgreen;
+    min-height: 100vh;
+  }
+}
+
+.task_2 {
+    margin-top: 100px;
+
+  .block {
+    font-size: 10px; /* 1rem == 20px */
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+}
+
+/* Было  */
+/* .task_3 {
+  .title {
+    font-size: 32px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+} */
+
+/* Правильней использовать */
+.task_3 {
+    margin-top: 100px;
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* Было для task_3 */
+/* @media (width < 768px) {
+  .task_3 {
+    .title {
+      font-size: 28px;
+    }
+
+    .heading {
+      font-size: 21px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (width < 425px) {
+     .task_3 {
+    .title {
+      font-size: 24px;
+    }
+
+    .heading {
+      font-size: 18px;
+    }
+
+    .text {
+      font-size: 12px;
+    }
+  } 
+} */
+
+/* Нужно для task_3 */
+@media (width < 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (width < 425px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+.task_4 {
+    margin-top: 100px;
+
+  .content {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .item {
+    /* коэффициент увеличения flex */
+    /* определяю равные значения по ширене в одной линии */
+    /* flex-grow: 1; */
+
+    /* ограничитель для flex-grow */
+    /* минимальная граница */
+    /* flex-basis: 100px; */
+
+    /* коэффициент сжатия, работает без wrap и grow */
+    flex-shrink: 1;
+    width: 250px;
+
+    height: 100px;
+    border: 1px solid #000;
+  }
+
+  .item_2 {
+    /* коэффициент сжатия, работает без wrap и grow */
+    flex-shrink: 2;
+  }
+}
+
+.task_5 {
+    margin-top: 100px;
+
+  .content {
+    display: grid;
+    /* если использовать фиксированное число повторений, то если элементов будет меньше, то появится пустота */
+    /* grid-template-columns: repeat(7, 1fr); */
+
+    /* grid-template-columns: repeat(auto-fit, 200px); */
+    justify-content: center;
+    gap: 16px;
+    max-width: 1000px;
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+    
+    /* чтобы элементы были равномерно растянуты */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+
+  .item {
+    border: 1px solid #000;
+    min-height: 100px;
+  }
+}
+
+.task_6 {
+    margin-top: 100px; 
+  .content {
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1000px;
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    /* решения проблемы с заполнением пустых дыр при использовании grid */
+    grid-auto-flow: dense;
+
+  }
+
+  .item {
+    border: 1px solid #000;
+    min-height: 100px;
+    
+  }
+
+  .item_3 {
+    /* 790px плохо */
+    /* grid-column: span 2; */
+    /* grid-row: span 2; */
+
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+.
