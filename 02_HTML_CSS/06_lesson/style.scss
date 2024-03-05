@@ -1,11 +1,69 @@
-html {
+$widthDuck: 65px;
+
+@for $i from 1 through 3 {
+    
+    @keyframes duck-fly-#{$i} {
+        0% {
+            left: -$widthDuck;
+            top: random(90)+vh;
+        }
+
+        50% {
+            left: random(60)+vh;
+            top: random(90)+vh;
+        }
+
+        100% {
+            left: 100vw;
+            top: random(90)+vh;
+        }
+    }
+  }
+
+.body {
     counter-reset: count;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 
-.duck-check:checked {
-    counter-increment: count;
+.duck-check {
+    position: absolute;
+    visibility: hidden;
+    left: -9999999px;
+
+    &:checked {
+        counter-increment: count;
+    }
 }
 
-.counter-info::before {
-    content: '5';
+
+.counter-info {
+    position: absolute;
+    top: 14px;
+    right: 54px;
+    font-size: 40px;
+    font-family: sans-serif;
+
+    &::before {
+        content: counter(count);
+    }
+}
+
+.duck {
+    position: absolute;
+
+    &__img {
+        width: $widthDuck;
+    }
+    @for $i from 1 through 3 {
+          &_#{$i} {
+              animation: duck-fly-#{$i} 6s ease-in #{$i}s both;
+            }
+    }
 }
