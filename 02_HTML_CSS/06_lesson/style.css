@@ -1,25 +1,25 @@
 @keyframes duck-fly-1 {
   0% {
     left: -65px;
-    top: 29vh;
+    top: 59vh;
   }
   50% {
-    left: 1vh;
-    top: 75vh;
+    left: 46vh;
+    top: 67vh;
   }
   100% {
     left: 100vw;
-    top: 89vh;
+    top: 11vh;
   }
 }
 @keyframes duck-fly-2 {
   0% {
     left: -65px;
-    top: 46vh;
+    top: 4vh;
   }
   50% {
-    left: 14vh;
-    top: 89vh;
+    left: 60vh;
+    top: 26vh;
   }
   100% {
     left: 100vw;
@@ -29,15 +29,15 @@
 @keyframes duck-fly-3 {
   0% {
     left: -65px;
-    top: 65vh;
+    top: 19vh;
   }
   50% {
-    left: 47vh;
-    top: 81vh;
+    left: 5vh;
+    top: 41vh;
   }
   100% {
     left: 100vw;
-    top: 20vh;
+    top: 15vh;
   }
 }
 .body {
