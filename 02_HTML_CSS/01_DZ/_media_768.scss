@@ -1,0 +1,35 @@
+@media (width < 769px) {
+    .center {
+        padding-left: calc(50% - 16px);
+        padding-right: calc(50% - 16px);
+    }
+    
+    .title {
+        &_content {
+            &_img {
+                width: 384px;
+            }
+            height: auto;
+        }
+
+        &_center {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-header {
+            font-size: 44px;
+
+            &-down {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .offer {
+        &_content {
+            margin-top: 20px;
+        }
+
+    }
+}

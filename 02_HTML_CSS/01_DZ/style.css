@@ -1013,4 +1013,30 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_down_icons {
   display: flex;
   gap: 7px;
+}
+
+@media (width < 769px) {
+  .center {
+    padding-left: calc(50% - 16px);
+    padding-right: calc(50% - 16px);
+  }
+  .title_content {
+    height: auto;
+  }
+  .title_content_img {
+    width: 384px;
+  }
+  .title_center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .title-header {
+    font-size: 44px;
+  }
+  .title-header-down {
+    font-size: 24px;
+  }
+  .offer_content {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
