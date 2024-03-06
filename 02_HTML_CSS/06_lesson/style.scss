@@ -1,16 +1,23 @@
-$widthDuck: 65px;
+$widthDuck: 80px;
+$duckCount: 4;
+$timeFlyDuck: 3s;
 
-@for $i from 1 through 3 {
+@for $i from 1 through $duckCount {
     
     @keyframes duck-fly-#{$i} {
         0% {
             left: -$widthDuck;
             top: random(90)+vh;
         }
+        
+        30% {
+            left: random(30)+vh;
+            top: random(50)+vh;
+        }
 
-        50% {
-            left: random(60)+vh;
-            top: random(90)+vh;
+        75% {
+            left: random(50)+vh;
+            top: random(75)+vh;
         }
 
         100% {
@@ -39,6 +46,10 @@ $widthDuck: 65px;
 
     &:checked {
         counter-increment: count;
+
+        & ~ label {
+            display: none;
+        }
     }
 }
 
@@ -61,9 +72,9 @@ $widthDuck: 65px;
     &__img {
         width: $widthDuck;
     }
-    @for $i from 1 through 3 {
+    @for $i from 1 through $duckCount {
           &_#{$i} {
-              animation: duck-fly-#{$i} 6s ease-in #{$i}s both;
+              animation: duck-fly-#{$i} $timeFlyDuck ease-in #{$i}s both;
             }
     }
 }
