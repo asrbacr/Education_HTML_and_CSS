@@ -194,9 +194,14 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   &_cards_up {
-    display: flex;
+    // display: flex;
     gap: 30px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    justify-content: center;
+    justify-items: center;
   }
 
   &_card {

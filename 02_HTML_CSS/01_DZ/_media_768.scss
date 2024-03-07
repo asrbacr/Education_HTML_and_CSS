@@ -3,22 +3,32 @@
         padding-left: calc(50% - 16px);
         padding-right: calc(50% - 16px);
     }
+
+    .header {
+        &_logo_group {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
     
     .title {
+        // padding-right: 29px;
+        
         &_content {
             &_img {
                 width: 384px;
             }
             height: auto;
         }
-
+        
         &_center {
             padding-left: 0;
             padding-right: 0;
         }
-
+        
         &-header {
             font-size: 44px;
+            padding-left: 16px;
 
             &-down {
                 font-size: 24px;
@@ -29,6 +39,10 @@
     .offer {
         &_content {
             margin-top: 20px;
+        }
+
+        &_cards_up {
+            gap: 19px;
         }
 
     }

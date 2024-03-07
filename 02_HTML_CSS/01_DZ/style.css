@@ -200,9 +200,11 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 65px;
 }
 .offer_cards_up {
-  display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  justify-content: center;
+  justify-items: center;
 }
 .offer_card {
   position: relative;
@@ -1020,6 +1022,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: calc(50% - 16px);
     padding-right: calc(50% - 16px);
   }
+  .header_logo_group {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .title_content {
     height: auto;
   }
@@ -1032,11 +1038,15 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .title-header {
     font-size: 44px;
+    padding-left: 16px;
   }
   .title-header-down {
     font-size: 24px;
   }
   .offer_content {
     margin-top: 20px;
+  }
+  .offer_cards_up {
+    gap: 19px;
   }
 }/*# sourceMappingURL=style.css.map */
