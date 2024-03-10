@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes bulbRise-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 63vh;
+    right: 48vw;
+    display: none;
+  }
+}
+@keyframes bulbRise-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 50vh;
+    left: 37vw;
+    display: none;
+  }
+}
+@keyframes bulbRise-3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 14vh;
+    right: 13vw;
+    display: none;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./image/background.jpg") no-repeat center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  counter-reset: count;
+}
+
+svg {
+  width: 50px;
+  fill: yellow;
+}
+
+.bulb {
+  position: absolute;
+}
+.bulb-1 {
+  animation: bulbRise-1 3s 0s both;
+}
+.bulb-2 {
+  animation: bulbRise-2 3s 1s both;
+}
+.bulb-3 {
+  animation: bulbRise-3 3s 4s both;
+}
+.bulb__input {
+  position: absolute;
+  left: -99999999px;
+  visibility: hidden;
+}
+.bulb__input:checked {
+  counter-increment: count;
+}
+
+.counter {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.counter::before {
+  content: counter(count);
+}/*# sourceMappingURL=style.css.map */
