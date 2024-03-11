@@ -67,6 +67,14 @@
         }
     }
 
+    .page_product_title {
+        display: flex;
+
+        &_product_description {
+            position: relative;
+        }
+    }    
+
     .footer {
         &_head {
             gap: 48px;

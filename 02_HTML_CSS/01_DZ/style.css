@@ -325,6 +325,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .products_card {
   width: 360px;
@@ -957,6 +958,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #222224;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer_head_card {
   display: flex;
@@ -1122,6 +1126,12 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .products_elements {
     gap: 16px;
+  }
+  .page_product_title {
+    display: flex;
+  }
+  .page_product_title_product_description {
+    position: relative;
   }
   .footer_head {
     gap: 48px;
