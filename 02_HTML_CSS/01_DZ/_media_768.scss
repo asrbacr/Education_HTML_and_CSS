@@ -1,7 +1,9 @@
 @media (width < 769px) {
     .center {
-        padding-left: calc(50% - 16px);
-        padding-right: calc(50% - 16px);
+        /* padding-left: calc(50% - 16px); */
+        padding-left: 16px;
+        /* padding-right: calc(50% - 16px); */
+        padding-right: 16px;
     }
 
     .header {
@@ -36,7 +38,7 @@
         }
     }
 
-    .offer {
+/*     .offer {
         &_content {
             margin-top: 20px;
         }
@@ -45,5 +47,38 @@
             gap: 19px;
         }
 
+    } */
+
+    .sale {
+        gap: 20px;
+
+        &__text {
+            width: 155px;
+        }
+
+        &__img {
+            height: 100%;
+        }
+    }
+
+    .products {
+        &_elements {
+            gap: 16px;
+        }
+    }
+
+    .footer {
+        &_head {
+            gap: 48px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+
+        &_title {
+            flex-wrap: wrap;
+            gap: 48px;
+        }
     }
 }
