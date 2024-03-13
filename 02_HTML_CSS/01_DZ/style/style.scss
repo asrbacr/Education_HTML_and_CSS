@@ -109,6 +109,10 @@ input[type="number"]::-webkit-outer-spin-button {
           }
         }
       }
+
+      &__registration, &__card{
+        display: none;
+      }
     }
   }
 }
@@ -173,13 +177,12 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: 377px;
     border-left: 12px solid $colorSiteMainElement;
     padding-left: 16px;
-
+    line-height: 2rem;
+    
     &-down {
       color: #222;
       font-size: 32px;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
     }
 
     &-red {
@@ -767,6 +770,7 @@ input[type="number"]::-webkit-outer-spin-button {
   &__button {
     padding: 17px 40px;
     border: 1px solid #a4a4a4;
+    text-transform: uppercase;
 
     &:hover {
       cursor: pointer;
@@ -864,7 +868,7 @@ input[type="number"]::-webkit-outer-spin-button {
   &_sort {
     padding-top: 12px;
     display: flex;
-    gap: 18px;
+    gap: 28px;
 
     &_group {
       position: relative;
@@ -1043,7 +1047,7 @@ input[type="number"]::-webkit-outer-spin-button {
     list-style: none;
 
     &::before {
-      content: url('./img/icon/tick.svg');
+      content: url('../img/icon/tick.svg');
       margin-right: 22px;
     }
   }
@@ -1201,3 +1205,4 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @import "media_1024";
 @import "media_768";
+@import "media_425";

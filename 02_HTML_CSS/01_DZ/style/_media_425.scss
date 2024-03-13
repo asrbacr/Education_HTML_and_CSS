@@ -1,0 +1,220 @@
+@media (width < 426px) {
+  .center {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .header {
+    &_logo_group {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &_nav {
+      &_registration {
+        display: none;
+      }
+      &_card {
+        display: none;
+      }
+    }
+    .burger_nav__registration {
+      display: block;
+    }
+    .burger_nav__card {
+      display: block;
+    }
+  }
+
+  .title {
+    &_content_left {
+      display: none;
+    }
+
+    &_headers {
+      padding-top: 148px;
+      padding-bottom: 148px;
+      padding-left: 52px;
+      padding-right: 54px;
+    }
+
+    &-header {
+      font-size: 38px;
+
+      &-down {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .sale {
+    grid-template-columns: repeat(1, 1fr);
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .page_product_top {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+
+  .filter {
+    padding-top: 24px;
+
+    &_summary {
+      padding-left: 0;
+      &_heading {
+        display: none;
+      }
+      & svg {
+        width: 38px;
+        height: 25px;
+      }
+    }
+
+    &_details {
+      width: auto;
+    }
+
+    &_sort {
+      gap: 24px;
+
+      &_group_heading {
+        gap: 9px;
+
+        &_text {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  .products {
+    margin-top: 32px;
+  }
+
+  .swiper {
+    &-slide img {
+      width: 100%;
+      padding-top: 84px;
+      padding-bottom: 84px;
+    }
+  }
+
+  .page_product {
+    &_title_product_description {
+      justify-content: center;
+
+      &_text {
+        margin-top: 32px;
+        width: 326px;
+      }
+
+      &_hr {
+        margin-top: 32px;
+        width: 175px;
+      }
+
+      &_filter_group {
+        margin-top: 49px;
+        margin-bottom: 64px;
+
+        &_color_name {
+          font-size: 12px;
+        }
+      }
+    }
+    &_additional_cards {
+      margin-bottom: 64px;
+    }
+  }
+
+  .individual-pages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .lists-cart {
+    padding-top: 39px;
+    gap: 48px;
+
+    &__right {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  .cart {
+    width: 358px;
+    gap: 17px;
+    &__img {
+      width: 144px;
+    }
+
+    .cart-group {
+      width: 214px;
+      padding-top: 13px;
+      padding-bottom: 38px;
+      gap: 26px;
+
+      &__header {
+        gap: 32px;
+        padding-right: 12px;
+      }
+
+      &__content {
+        gap: 4px;
+      }
+
+      .quantity__number {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 1px 3px;
+      }
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .card__del svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    &__data {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__button {
+      padding: 9px 18px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      text-transform: none;
+    }
+  }
+
+  .registration {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer {
+    &_title_left_text {
+      font-size: 18px;
+    }
+
+    &_down {
+      flex-direction: column-reverse;
+      gap: 40px;
+      padding-top: 43px;
+    }
+  }
+}

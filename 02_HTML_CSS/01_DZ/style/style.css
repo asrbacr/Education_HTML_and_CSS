@@ -132,6 +132,9 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 17px;
   margin-top: 11px;
 }
+.header_nav .burger_nav__registration, .header_nav .burger_nav__card {
+  display: none;
+}
 
 /* по БЭМ */
 .breadcrumb__ul {
@@ -184,13 +187,12 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 377px;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
+  line-height: 2rem;
 }
 .title-header-down {
   color: #222;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 .title-header-red {
   color: #F16D7F;
@@ -711,6 +713,7 @@ input[type=number]::-webkit-outer-spin-button {
 .cart__button {
   padding: 17px 40px;
   border: 1px solid #a4a4a4;
+  text-transform: uppercase;
 }
 .cart__button:hover {
   cursor: pointer;
@@ -793,7 +796,7 @@ input[type=number]::-webkit-outer-spin-button {
 .filter_sort {
   padding-top: 12px;
   display: flex;
-  gap: 18px;
+  gap: 28px;
 }
 .filter_sort_group {
   position: relative;
@@ -946,7 +949,7 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
 }
 .registration__perks::before {
-  content: url("./img/icon/tick.svg");
+  content: url("../img/icon/tick.svg");
   margin-right: 22px;
 }
 
@@ -1147,6 +1150,7 @@ input[type=number]::-webkit-outer-spin-button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px;
+    padding-top: 59px;
   }
   .lists-cart__right {
     flex-direction: row;
@@ -1185,5 +1189,180 @@ input[type=number]::-webkit-outer-spin-button {
   .registration__header, .registration__text, .registration__perks {
     font-size: 16px;
     line-height: 19px;
+  }
+  .filter {
+    justify-content: space-between;
+  }
+}
+@media (width < 426px) {
+  .center {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header_logo_group {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header_nav_registration {
+    display: none;
+  }
+  .header_nav_card {
+    display: none;
+  }
+  .header .burger_nav__registration {
+    display: block;
+  }
+  .header .burger_nav__card {
+    display: block;
+  }
+  .title_content_left {
+    display: none;
+  }
+  .title_headers {
+    padding-top: 148px;
+    padding-bottom: 148px;
+    padding-left: 52px;
+    padding-right: 54px;
+  }
+  .title-header {
+    font-size: 38px;
+  }
+  .title-header-down {
+    font-size: 20px;
+  }
+  .sale {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sale__img {
+    width: 100%;
+  }
+  .page_product_top {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .filter {
+    padding-top: 24px;
+  }
+  .filter_summary {
+    padding-left: 0;
+  }
+  .filter_summary_heading {
+    display: none;
+  }
+  .filter_summary svg {
+    width: 38px;
+    height: 25px;
+  }
+  .filter_details {
+    width: auto;
+  }
+  .filter_sort {
+    gap: 24px;
+  }
+  .filter_sort_group_heading {
+    gap: 9px;
+  }
+  .filter_sort_group_heading_text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .products {
+    margin-top: 32px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+  .page_product_title_product_description {
+    justify-content: center;
+  }
+  .page_product_title_product_description_text {
+    margin-top: 32px;
+    width: 326px;
+  }
+  .page_product_title_product_description_hr {
+    margin-top: 32px;
+    width: 175px;
+  }
+  .page_product_title_product_description_filter_group {
+    margin-top: 49px;
+    margin-bottom: 64px;
+  }
+  .page_product_title_product_description_filter_group_color_name {
+    font-size: 12px;
+  }
+  .page_product_additional_cards {
+    margin-bottom: 64px;
+  }
+  .individual-pages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .lists-cart {
+    padding-top: 39px;
+    gap: 48px;
+  }
+  .lists-cart__right {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .cart {
+    width: 358px;
+    gap: 17px;
+  }
+  .cart__img {
+    width: 144px;
+  }
+  .cart .cart-group {
+    width: 214px;
+    padding-top: 13px;
+    padding-bottom: 38px;
+    gap: 26px;
+  }
+  .cart .cart-group__header {
+    gap: 32px;
+    padding-right: 12px;
+  }
+  .cart .cart-group__content {
+    gap: 4px;
+  }
+  .cart .cart-group .quantity__number {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px 3px;
+  }
+  .cart__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart .card__del svg {
+    width: 10px;
+    height: 10px;
+  }
+  .cart__data {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cart__button {
+    padding: 9px 18px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: none;
+  }
+  .registration {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .footer_title_left_text {
+    font-size: 18px;
+  }
+  .footer_down {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-top: 43px;
   }
 }/*# sourceMappingURL=style.css.map */
