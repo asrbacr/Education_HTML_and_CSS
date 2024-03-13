@@ -614,7 +614,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
-  margin-right: -9px;
 }
 .checkout__grand {
   font-size: 16px;
@@ -622,7 +621,6 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 19px;
   color: #222;
   margin-top: 12px;
-  margin-right: -6px;
 }
 .checkout__grand_span {
   font-weight: 700;
@@ -1077,7 +1075,7 @@ input[type=number]::-webkit-outer-spin-button {
   gap: 7px;
 }
 
-@media (width < 769px) {
+@media (width < 1025px) {
   .center {
     /* padding-left: calc(50% - 16px); */
     padding-left: 16px;
@@ -1092,7 +1090,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: auto;
   }
   .title_content_img {
-    width: 384px;
+    width: 560px;
   }
   .title_center {
     padding-left: 0;
@@ -1127,7 +1125,7 @@ input[type=number]::-webkit-outer-spin-button {
   .products_elements {
     gap: 16px;
   }
-  .products_elements .products_card:nth-child(3n) {
+  .products_elements .products__hide {
     display: none;
   }
   .page_product_title_product_description {
@@ -1138,15 +1136,54 @@ input[type=number]::-webkit-outer-spin-button {
   .page_product_additional_cards {
     margin-top: 128px;
   }
+  .cart {
+    width: 734px;
+  }
+  .cart__buttons {
+    gap: 48px;
+    justify-content: center;
+  }
+  .lists-cart {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+  }
+  .lists-cart__right {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  .registration {
+    gap: 22px;
+  }
   .footer_head {
     gap: 48px;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 48px;
     padding-bottom: 64px;
+    flex-direction: column;
   }
   .footer_title {
     flex-wrap: wrap;
     gap: 48px;
+  }
+}
+@media (width < 769px) {
+  .title_content_img {
+    width: 384px;
+  }
+  .registration {
+    gap: 22px;
+  }
+  .registration__right {
+    gap: 30px;
+  }
+  .registration__text {
+    max-width: 354px;
+  }
+  .registration__header, .registration__text, .registration__perks {
+    font-size: 16px;
+    line-height: 19px;
   }
 }/*# sourceMappingURL=style.css.map */

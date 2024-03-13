@@ -1,0 +1,28 @@
+@media (width < 769px) {
+  .title {
+    &_content {
+      &_img {
+        width: 384px;
+      }
+    }
+  }
+
+  .registration {
+    gap: 22px;
+
+    &__right {
+      gap: 30px;
+    }
+
+    &__text {
+      max-width: 354px;
+    }
+
+    &__header,
+    &__text,
+    &__perks {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
