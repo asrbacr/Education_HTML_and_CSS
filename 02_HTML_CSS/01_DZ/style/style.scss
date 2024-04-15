@@ -110,7 +110,8 @@ input[type="number"]::-webkit-outer-spin-button {
         }
       }
 
-      &__registration, &__card{
+      &__registration,
+      &__card {
         display: none;
       }
     }
@@ -178,7 +179,7 @@ input[type="number"]::-webkit-outer-spin-button {
     border-left: 12px solid $colorSiteMainElement;
     padding-left: 16px;
     line-height: 2rem;
-    
+
     &-down {
       color: #222;
       font-size: 32px;
@@ -275,7 +276,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   &__heading {
@@ -367,11 +368,17 @@ input[type="number"]::-webkit-outer-spin-button {
         position: absolute;
 
         .products_card_img-button-text {
-          display: block;
+          display: flex;
+          gap: 11px;
+          align-items: center;
           color: #fff;
           font-size: 14px;
           font-weight: 400;
           line-height: 17px;
+        }
+
+        .products_card_img-button-text::before {
+          content: url("../img/svg/basket.svg");
         }
       }
     }
@@ -932,7 +939,6 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   &__form {
-    
     &_container {
       display: flex;
       flex-direction: column;
@@ -1003,14 +1009,14 @@ input[type="number"]::-webkit-outer-spin-button {
     &_arrow path {
       fill: #000;
     }
-    
+
     &:hover {
       background: $colorSiteMainElement;
       border: 1px solid $colorSiteMainElement;
       color: #fff;
       box-sizing: border-box;
       cursor: pointer;
-      
+
       .registration__button_arrow path {
         fill: #fff;
       }
@@ -1047,12 +1053,10 @@ input[type="number"]::-webkit-outer-spin-button {
     list-style: none;
 
     &::before {
-      content: url('../img/icon/tick.svg');
+      content: url("../img/icon/tick.svg");
       margin-right: 22px;
     }
   }
-
-
 }
 
 .footer {

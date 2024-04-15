@@ -281,7 +281,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .sale__heading {
@@ -362,11 +362,16 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
 }
 .products_card_img:hover .products_card_img-button .products_card_img-button-text {
-  display: block;
+  display: flex;
+  gap: 11px;
+  align-items: center;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+}
+.products_card_img:hover .products_card_img-button .products_card_img-button-text::before {
+  content: url("../img/svg/basket.svg");
 }
 .products_card_down {
   display: flex;
