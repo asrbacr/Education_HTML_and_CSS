@@ -3,7 +3,7 @@ const catalogData = `[
     "id": 1,
     "srcImg": "./img/products_card_1.jpeg",
     "imgAlt": "card_1",
-    "hrefCard": "./product.html",
+    "hrefCard": "",
     "productName": "ELLERY X M'O CAPSULE",
     "productText": "Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.",
     "productPrice": "$52.00"
